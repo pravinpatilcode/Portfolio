@@ -1,0 +1,353 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: 0.5s linear;
+    background-color: white;
+}
+
+.logo img{
+    width: 50px;
+    height: 40px;
+    border-radius: 25px;
+}
+.navbar a{
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #AF4B2F;
+    font-weight: 700;
+}
+
+.navbar a:hover{
+    background-color: #AF4B2F;
+    color: white;
+    transition: 0.2s all linear;
+}
+
+#search{
+    color: #AF4B2F;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 800;
+}
+
+#menu{
+    color: #AF4B2F;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+.search-box{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+
+
+#search-box input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #AF4B2F;
+}
+
+.search-box input::placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.home{
+    padding: 200px 100px;
+    padding-left: 830px;
+    padding-top: 260px;
+    box-sizing: border-box;
+}
+
+.home{
+    box-sizing: border-box;
+    width: 100%;
+    height: 680px;
+    background-image: url(Chai.jpg);
+    background-size: cover;
+}
+
+.first-text{
+    color: white;
+    font-size: 2.5em;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing  5s steps(16) infinite, cursor .4s step-end infinite alternate ;
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes cursor {
+    50%{ border-color:transparent ;}
+}
+
+
+.menubox{
+    display: flex;
+}
+
+.para{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: #FFFDD0;
+    text-align: justify;
+}
+
+.btn{
+    color: #AF4B2F;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    box-shadow: 20px 20px 60px black;
+}
+
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #AF4B2F;
+    font-weight: 400;
+}
+
+.Product{
+    width: 400px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;  
+    cursor: pointer;
+}
+
+.Product:hover{
+    width: 100%;
+    height: 90%;
+    transition: 1.5s;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #AF4B2F;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #AF4B2F;
+    color: white;
+    height: 40px;
+    padding: 25px;
+}
+
+.slideerImg{
+    height: 450px;
+}
+
+.slideerImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.franchise-head{
+    display: flex;
+    width: 100%;
+    color: #AF4B2F;
+    font-weight: 600;
+    font-size: 2.5rem;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.Franchise{
+    display: flex;
+    margin: 0px 150px;
+}
+
+.box1 img{
+     height: 420px; 
+     margin-left: 10px;
+     margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.franchises-form{
+    display: block;
+    justify-content: center;
+
+}
+
+.franchises-form input{
+
+    width: 100%;
+    height: 55px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+
+}
+
+.franchises-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.franchises-btn button{
+    width: 150px;
+    color: #AF4B2F;
+    background-color: white;
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.myblog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    font-size: 2.5rem;
+    color: #AF4B2F;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+}
+
+.blog1{
+    display: flex;
+    align-items: center;
+
+}
+
+.blog1 img{
+    height: 400px;
+    width: 650px;
+    border-radius: 9px;
+    box-shadow:2px 2px 30px rgba(0, 0, 0, 0.2) ;
+    padding: 10px;
+    margin: 20px;
+}
+
+.headblog{
+    padding: 10px;
+}
+
+.para-blog{
+    text-align: justify;
+    padding: 10px;
+}
+
+.myFooter{
+    color: white;
+    background-color: #AF4B2F;
+    width: 100%;
+    height: 300px;
+    
+}
+.mainfoot{
+    display: flex;
+    padding: 30px;
+}
+.footer-1 {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 260px;
+    padding: 10px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.footer-2{
+    height: 100%;
+    width: 260px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-left: 46px;
+    margin-bottom: 15px;
+}
+
+.address a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.contactNo{
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.contactNo a{
+    color: white;
+}
+
+.footericon{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 3.5rem;
+}
+.footericon i{
+    padding: 10px;
+    margin: 10px;
+}
+
+.lastpara{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen  {
+    
+}
